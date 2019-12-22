@@ -67,9 +67,9 @@ This repository contains tutorials I developed for a series of courses to introd
 <blockquote> 
     <p> 
         Natural language processing AKA text analytics
-        <br>Searching for and visualizing topics in documents
+        <br>Searching for and visualizing topics in a corpus of documents using gensim and LDAvis
         <br>Name entity recongnition using NLTK
-        <br>2018-03/lesson 4 and 5 & exercise solutions
+        <br>Looking at word frequency and identifying keywords
     </p> 
 </blockquote>
 
