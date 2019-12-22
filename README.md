@@ -2,9 +2,9 @@
 ```diff
 + Python training tutorials
 ```
-[1. Introduction](#Introduction)
-[2. Getting Started](#Getting Started)
-[3. Course Contents](#Course Contents)
+[1. Introduction](#Introduction) <br>
+[2. Getting Started](#Getting Started) <br>
+[3. Course Contents](#Course Contents) <br>
 
 ## Introduction
 This repository contains tutorials I developed for a series of courses I developed to introduce non-technical individuals to Python.  The training series increases in complexity moving from introduction to more itermediate and finally to some advanced examples of what can be done with Python.  Each level of traning is found on a different branch that can be cloned or downloaded.
@@ -43,3 +43,14 @@ This repository contains tutorials I developed for a series of courses I develop
 </blockquote>
 
 ## Course Contents
+1. Introduction
+<blockquote> 
+    <p> 
+        DWorking with packages and data types 
+        <br>Using pandas
+        <br>Data cleaning with pandas
+        <br>Data visualization
+    </p> 
+</blockquote>
+
+
