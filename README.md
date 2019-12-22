@@ -7,7 +7,7 @@
 [3. Course Contents](#Course-Contents) <br>
 
 ## Introduction
-This repository contains tutorials I developed for a series of courses to introduce non-technical individuals to Python.  The training series increases in complexity moving from introduction to more itermediate and finally to some advanced examples of what can be done with Python.  Each level of traning is found on a different branch that can be cloned or downloaded.
+This repository contains tutorials I developed for a series of courses to introduce non-technical individuals to Python.  The training series increases in complexity moving from introduction to more intermediate and finally to some advanced examples of what can be done with Python.  Each level of traning is found on a different branch that can be cloned or downloaded.
 
 ## Getting Started
 *The instructions below assume you already have anaconda installed.  If not, follow the instructions here* <a href="https://docs.anaconda.com/anaconda/install/">anaconda installation instructions</a>
@@ -57,9 +57,9 @@ This repository contains tutorials I developed for a series of courses to introd
 <blockquote> 
     <p> 
         Using APIs and Maps
-        <br>Google map's API
+        <br>Using Nominatim OpenStreetMap's API
         <br>Mapping data & viewing results
-        <br>2017-11/Use_Case-revise.ipynb
+        <br>Cleaning and combining data from logs and databases
     </p> 
 </blockquote>
 
