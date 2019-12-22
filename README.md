@@ -56,20 +56,20 @@ This repository contains tutorials I developed for a series of courses I develop
 2. Intermediate
 <blockquote> 
     <p> 
-        TBD
-        <br>
-        <br>
-        <br>
+        Using APIs and Maps
+        <br>Google map's API
+        <br>Mapping data & viewing results
+        <br>2017-11/Use_Case-revise.ipynb
     </p> 
 </blockquote>
 
 3. Advanced
 <blockquote> 
     <p> 
-        TBD
-        <br>
-        <br>
-        <br>
+        Natural language processing AKA text analytics
+        <br>Searching for and visualizing topics in documents
+        <br>Name entity recongnition using NLTK
+        <br>2018-03/lesson 4 and 5 & exercise solutions
     </p> 
 </blockquote>
 
