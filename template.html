@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Result Map</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="js/leaflet.css"/>
+    <script src="js/leaflet.js"></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script src="markers.js" type="text/javascript"></script>
+
+    <script>
+			
+        var map = L.map('map').setView([40.34, -5.80], 3);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        
+		var streets = L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; ' + mapLink,
+            maxZoom: 18,
+			minZoom: 3,
+            }).addTo(map);
+			
+		map.bounds = [],
+		
+		map.setMaxBounds([
+			[89,179],
+			[-89, -179]
+		]);
+		
+		var phoneIcon = L.icon({
+			iconUrl: './icons/phone.png',
+			iconSize: [32, 37],
+			iconAnchor: [16, 37],
+			popupAnchor: [0, -28]
+		});
+		
+		var ipIcon = L.icon({
+			iconUrl: './icons/ip.png',
+			iconSize: [32, 37],
+			iconAnchor: [16, 37],
+			popupAnchor: [0, -28]
+		});
+		
+		function onEachFeature(feature, layer) {
+		var popupContent = "<p>Blank</p>";
+
+		if (feature.properties && feature.properties.email) {
+			popupContent = feature.properties.email+"<br>";
+			popupContent += feature.properties.number;
+		}
+
+		layer.bindPopup(popupContent);
+		}
+
+		var ipLayer = L.geoJSON(ips, {
+
+			pointToLayer: function (feature, latlng) {
+				return L.marker(latlng, {icon: ipIcon});
+			},
+
+			onEachFeature: onEachFeature
+		}).addTo(map);
+
+		var phoneLayer = L.geoJSON(phones, {
+
+			pointToLayer: function (feature, latlng) {
+				return L.marker(latlng, {icon: phoneIcon});
+			},
+
+			onEachFeature: onEachFeature
+		}).addTo(map);
+		
+		var baseLayers = {
+			"Streets": streets
+		};
+
+	
+		var overlays = {
+			"Ips": ipLayer,
+			"Phones": phoneLayer
+		};
+		
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+    </script>
+</body>
+</html>
