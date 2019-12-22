@@ -7,11 +7,13 @@
 [3. Course Contents](#Course-Contents) <br>
 
 ## Introduction
-This repository contains tutorials I developed for a series of courses to introduce non-technical individuals to Python.  The training series increases in complexity moving from introduction to more intermediate and finally to some advanced examples of what can be done with Python.  Each level of traning is found on a different branch that can be cloned or downloaded.
+This repository contains tutorials I developed for a series of courses to introduce non-technical individuals to Python.  The training series increases in complexity moving from introduction to more intermediate and finally to some advanced examples of what can be done with Python.  Each level of traning is found on a different branch that can be cloned or downloaded.<br>
+<img src="images/training_branches.png">
 
 ## Getting Started
 *The instructions below assume you already have anaconda installed.  If not, follow the instructions here* <a href="https://docs.anaconda.com/anaconda/install/">anaconda installation instructions</a>
-1. Select the branch for the course of interest and <font color="green">Clone or Download</font> using the green button at the top right-hand side of the screen <br>
+1. Select the branch for the course of interest and Clone or Download the repo using the green button at the top right-hand side of the screen <br>
+<img src="images/green_button.png"><br>
 2. Each repository comes with a <span>&#42;</span>.yml and requirements.txt.  An environment to run the tutorial in can be created in one of the following ways:
 
 ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `Option 1`
